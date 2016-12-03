@@ -28,6 +28,7 @@
     		$("#carDirection").keydown(function(event){ 
 			
 				if (event.keyCode === 87 && kflag === false){ 
+					socket.emit("String", "w");
 					console.log("你按下了W"); 
 					
 					$("#carDirection").removeClass("direction");
@@ -39,6 +40,7 @@
 					
 				} 
 				if (event.keyCode === 83 && kflag === false){ 
+					socket.emit("String", "s");
 					console.log("你按下了s"); 
 					
 					$("#carDirection").removeClass("direction");
@@ -50,6 +52,7 @@
 					
 				} 
 				if (event.keyCode === 65 && kflag === false){ 
+					socket.emit("String", "a");
 					console.log("你按下了a"); 
 					
 					$("#carDirection").removeClass("direction");
@@ -61,6 +64,7 @@
 					
 				} 
 				if (event.keyCode === 68 && kflag === false){ 
+					socket.emit("String", "d");
 					console.log("你按下了d"); 
 					
 					$("#carDirection").removeClass("direction");
